@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-stacktrace: never
+
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-cicurglph6em8s01be9g-a.singapore-postgres.render.com:5432/dbhwstl
+    username: higa_admin
+    password: Ah0bVnuldtRgEOjRnFgfNziwcYhLPw85
+  jpa:
+    hibernate:
+#      ddl-auto: create
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+      id:
+        db_structure_naming_strategy: legacy
+
+    show-sql: true
