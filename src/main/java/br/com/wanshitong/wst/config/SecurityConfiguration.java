@@ -36,7 +36,7 @@ public class SecurityConfiguration {
 //                .authenticationProvider(authenticationProvider)
 //                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
-        httpSecurity.csrf().disable()
+        httpSecurity.cors().and().csrf().disable()
                 .authorizeHttpRequests()
                 .requestMatchers("/**")
                 .permitAll();
