@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Set;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/v1/livro")
 @Validated
 public class LivroController {
